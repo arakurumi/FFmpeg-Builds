@@ -1,4 +1,4 @@
-ARG GH_REPO=ghcr.io/btbn/ffmpeg-builds
+ARG GH_REPO=ghcr.io/arakurumi/FFmpeg-Builds
 FROM $GH_REPO/base:latest
 
 RUN \

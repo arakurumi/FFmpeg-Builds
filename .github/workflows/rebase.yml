@@ -1,0 +1,16 @@
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  
+  workflow_dispatch:
+
+jobs:
+  rebase:
+    runs-on: ubuntu-24.04
+
+    steps:
+    - uses: actions/checkout@master
+      with:
+        fetch-depth: 0
+
+    - uses: imba-tjd/rebase-upstream-action@master
